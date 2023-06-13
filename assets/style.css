@@ -3,7 +3,7 @@
   padding: 15px;
 }
 @media only screen and (max-width: 575px) {
-  .bgcolor header .logo .images img {
+  .bgcolor header .logo img {
     width: 131px;
   }
 }
@@ -14,7 +14,38 @@
   text-decoration: none;
   color: white;
 }
-.bgcolor header .logo button {
+.bgcolor header .logo .mobil {
+  display: none;
+}
+.bgcolor header .logo .mobil li {
+  list-style: none;
+}
+.bgcolor header .logo .mobil li a {
+  text-decoration: none;
+}
+@media only screen and (max-width: 992px) {
+  .bgcolor header .logo .mobil .mobil {
+    width: 100px;
+    height: 50px;
+    border: 2px solid black;
+    animation-name: nav;
+    animation-fill-mode: forwards;
+    display: block;
+    left: -20px;
+  }
+  .bgcolor header .logo .mobil .mobile.active {
+    display: block;
+  }
+  @keyframes nav {
+    from {
+      left: -20px;
+    }
+    to {
+      left: 0px;
+    }
+  }
+}
+.bgcolor header button {
   padding: 7px 25px;
   background: #ff3839;
   border-radius: 9px;
@@ -22,21 +53,17 @@
   border: none;
 }
 @media only screen and (max-width: 768px) {
-  .bgcolor header .logo button {
+  .bgcolor header button {
     margin-left: 25px;
   }
 }
-.bgcolor header .icon i {
+.bgcolor .icon i {
   color: white;
   font-size: 25px;
-}
-@media only screen and (min-width: 992px) {
-  .bgcolor header .icon i {
-    display: none;
-  }
+  display: none;
 }
 @media only screen and (max-width: 942px) {
-  .bgcolor header h1 {
+  .bgcolor h1 {
     font-size: 50px;
   }
 }

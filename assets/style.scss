@@ -3,20 +3,14 @@
   padding: 15px;
   header {
     .logo {
-        .images{
-            img{
-
-
-            }
-          
-            @media only screen and (max-width: 575px){
-                &{
-                    img{
-                        width: 131px;
-                    }
-                }
-            }
+      @media only screen and (max-width: 575px) {
+        & {
+          img {
+            width: 131px;
+          }
         }
+      }
+
       .order {
         li {
           list-style: none;
@@ -26,141 +20,163 @@
           }
         }
       }
-      button{
-        padding: 7px 25px;
+      .mobil {
+        display: none;
+          li {
+              list-style: none;
+              a {
+                  text-decoration: none;
+                }
+            }
+          @media only screen and (max-width: 992px) {
+            .mobil{
+              width: 100px;
+              height: 50px;
+              border: 2px solid black;
+              animation-name: nav;
+              animation-fill-mode: forwards;
+              display: block;
+             
+
+              li{
+                a{
+
+                }
+              }
+              
+
+            left: -20px;           
+            }
+            .mobile.active{
+                display: block;
+            }
+            @keyframes nav{
+                from{
+                    left: -20px;
+                }to{
+                    left: 0px;
+                }
+            }
+          }
+        }
+    }
+    button {
+      padding: 7px 25px;
       background: #ff3839;
       border-radius: 9px;
       color: #ffffff;
       border: none;
-      @media only screen and (max-width: 768px){
-        &{                
-                margin-left: 25px;
+      @media only screen and (max-width: 768px) {
+        & {
+          margin-left: 25px;
         }
       }
     }
-}
-    .icon{
-      i{
-          color: white;
-          font-size: 25px;
-          @media only screen and (min-width: 992px) {
-            display: none;
-          }
-          
+  }
+  .icon {
+    i {
+      color: white;
+      font-size: 25px;
+      display: none;
+    }
+  }
+  @media only screen and (max-width: 942px) {
+    & {
+      h1 {
+        font-size: 50px;
       }
     }
-     @media only screen and (max-width: 942px)  {
-    
-                &{
-                    h1{
-                        font-size: 50px;
-        
-                    }
-                }
-            }
-    
   }
 }
-section{
- 
- .backimage{
+
+section {
+  .backimage {
     background-image: url("/img/graphic-designers-meeting.png");
     height: 705px;
-    background-repeat:no-repeat ;
+    background-repeat: no-repeat;
     background-size: cover;
-   
-    .all_item{
-        padding-top: 9%;
-        .p_wel{
-            p{
-                font-size: 20px;
-                span{
-                    color: red;
-                }
-            }
+
+    .all_item {
+      padding-top: 9%;
+      .p_wel {
+        p {
+          font-size: 20px;
+          span {
+            color: red;
+          }
         }
-        .one_h1{
-           
-            h1{
-                font-size: 92px;
-                margin-left: 30px;
-                width: 66%;
-            }
-            @media only screen and (max-width: 942px)  {
-    
-                &{
-                    h1{
-                        font-size: 50px;
-        
-                    }
-                }
-            }
-            @media only screen and (max-width: 942px){
-                &{
-                    h1{
-                        font-size: 40px;
-                    }
-                }
-            }
-        
+      }
+      .one_h1 {
+        h1 {
+          font-size: 92px;
+          margin-left: 30px;
+          width: 66%;
         }
-       .allsolid{
+        @media only screen and (max-width: 942px) {
+          & {
+            h1 {
+              font-size: 50px;
+            }
+          }
+        }
+        @media only screen and (max-width: 942px) {
+          & {
+            h1 {
+              font-size: 40px;
+            }
+          }
+        }
+      }
+      .allsolid {
         width: 80%;
         display: flex;
         justify-content: end;
-        .solid{
-            height: 3px;
-            width: 50%;
-            
+        .solid {
+          height: 3px;
+          width: 50%;
+
+          background-color: #ff3839;
+        }
+      }
+      .p2_page {
+        p {
+          font-size: 19px;
+          width: 51%;
+        }
+        @media only screen and (max-width: 942px) {
+          & {
+            p {
+              font-size: 20px;
+            }
+          }
+        }
+        @media only screen and (max-width: 411px) {
+          & {
+            p {
+              font-size: 15px;
+            }
+          }
+        }
+      }
+      .all_button {
+        .button_right {
+          button {
+            color: white;
+            border: none;
             background-color: #ff3839;
-
+            padding: 10px 40px;
+            border-radius: 5px;
+          }
         }
-       }
-       .p2_page{
-           p{
-            font-size: 19px;
-            width: 51%;
-               
+        .button_left {
+          button {
+            border: none;
+            background-color: white;
+            padding: 10px 40px;
+            border-radius: 5px;
+          }
         }
-        @media only screen and (max-width: 942px)  {
-    
-            &{
-                p{
-                    font-size: 20px;
-    
-                }
-            }
-        }
-        @media only screen and (max-width: 411px){
-            &{
-                p{
-                    font-size: 15px;
-                }
-            }
-        }
-       }
-       .all_button{
-        .button_right{
-            button{
-                color: white;
-                border: none;
-                background-color: #ff3839;
-                padding: 10px 40px;
-                border-radius: 5px;
-            }
-        }
-        .button_left{
-            button{
-                border: none;
-                background-color: white;
-                padding: 10px 40px;
-                border-radius: 5px;
-            }
-        }
-       }
+      }
     }
- }
+  }
 }
-
-
-
