@@ -2,17 +2,14 @@
   background-color: #202020;
   padding: 15px;
 }
-.bgcolor .head .logo {
-  gap: 5rem;
-}
-.bgcolor .head .logo .order li {
+.bgcolor header .logo .order li {
   list-style: none;
 }
-.bgcolor .head .logo .order li a {
+.bgcolor header .logo .order li a {
   text-decoration: none;
   color: white;
 }
-.bgcolor .head .logo button {
+.bgcolor header .logo button {
   padding: 7px 25px;
   background: #ff3839;
   border-radius: 9px;
@@ -25,4 +22,45 @@ section .backimage {
   height: 705px;
   background-repeat: no-repeat;
   background-size: cover;
+}
+section .backimage .all_item {
+  padding-top: 9%;
+}
+section .backimage .all_item .p_wel p {
+  font-size: 20px;
+}
+section .backimage .all_item .p_wel p span {
+  color: red;
+}
+section .backimage .all_item .one_h1 h1 {
+  font-size: 92px;
+  margin-left: 30px;
+  width: 66%;
+}
+section .backimage .all_item .allsolid {
+  width: 80%;
+  display: flex;
+  justify-content: end;
+}
+section .backimage .all_item .allsolid .solid {
+  height: 3px;
+  width: 50%;
+  background-color: #ff3839;
+}
+section .backimage .all_item .p2_page p {
+  font-size: 19px;
+  width: 51%;
+}
+section .backimage .all_item .all_button .button_right button {
+  color: white;
+  border: none;
+  background-color: #ff3839;
+  padding: 10px 40px;
+  border-radius: 5px;
+}
+section .backimage .all_item .all_button .button_left button {
+  border: none;
+  background-color: white;
+  padding: 10px 40px;
+  border-radius: 5px;
 }/*# sourceMappingURL=style.css.map */

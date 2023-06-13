@@ -1,9 +1,8 @@
 .bgcolor {
   background-color: #202020;
   padding: 15px;
-  .head {
+  header {
     .logo {
-        gap: 5rem;
         
       .order {
         li {
@@ -33,7 +32,61 @@ section{
     background-size: cover;
    
     .all_item{
-        
+        padding-top: 9%;
+        .p_wel{
+            p{
+                font-size: 20px;
+                span{
+                    color: red;
+                }
+            }
+        }
+        .one_h1{
+           
+            h1{
+                font-size: 92px;
+                margin-left: 30px;
+                width: 66%;
+            }
+        }
+       .allsolid{
+        width: 80%;
+        display: flex;
+        justify-content: end;
+        .solid{
+            height: 3px;
+            width: 50%;
+            
+            background-color: #ff3839;
+
+        }
+       }
+       .p2_page{
+           p{
+            font-size: 19px;
+            width: 51%;
+               
+        }
+       }
+       .all_button{
+        .button_right{
+            button{
+                color: white;
+                border: none;
+                background-color: #ff3839;
+                padding: 10px 40px;
+                border-radius: 5px;
+            }
+        }
+        .button_left{
+            button{
+                border: none;
+                background-color: white;
+                padding: 10px 40px;
+                border-radius: 5px;
+            }
+        }
+       }
     }
  }
 }
