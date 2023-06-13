@@ -2,7 +2,7 @@
   background-color: #202020;
   padding: 15px;
 }
-@media only screen and (max-width: 575px) {
+@media only screen and (max-width: 500px) {
   .bgcolor header .logo img {
     width: 131px;
   }
@@ -13,37 +13,6 @@
 .bgcolor header .logo .order li a {
   text-decoration: none;
   color: white;
-}
-.bgcolor header .logo .mobil {
-  display: none;
-}
-.bgcolor header .logo .mobil li {
-  list-style: none;
-}
-.bgcolor header .logo .mobil li a {
-  text-decoration: none;
-}
-@media only screen and (max-width: 992px) {
-  .bgcolor header .logo .mobil .mobil {
-    width: 100px;
-    height: 50px;
-    border: 2px solid black;
-    animation-name: nav;
-    animation-fill-mode: forwards;
-    display: block;
-    left: -20px;
-  }
-  .bgcolor header .logo .mobil .mobile.active {
-    display: block;
-  }
-  @keyframes nav {
-    from {
-      left: -20px;
-    }
-    to {
-      left: 0px;
-    }
-  }
 }
 .bgcolor header button {
   padding: 7px 25px;
@@ -61,11 +30,6 @@
   color: white;
   font-size: 25px;
   display: none;
-}
-@media only screen and (max-width: 942px) {
-  .bgcolor h1 {
-    font-size: 50px;
-  }
 }
 
 section .backimage {
@@ -134,4 +98,42 @@ section .backimage .all_item .all_button .button_left button {
   background-color: white;
   padding: 10px 40px;
   border-radius: 5px;
+}
+
+@media only screen and (min-width: 993px) {
+  .mobil {
+    display: none;
+  }
+}
+@media only screen and (max-width: 992px) {
+  .mobil {
+    position: absolute;
+    width: 134px;
+    top: 59px;
+    height: 162px;
+    border: 2px solid black;
+    animation-name: nav;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    left: -15px;
+    display: none;
+  }
+  .mobil li {
+    list-style: none;
+  }
+  .mobil li a {
+    color: #ff3839;
+    text-decoration: none;
+  }
+  .mobil.active {
+    display: block;
+  }
+  @keyframes nav {
+    from {
+      left: -15px;
+    }
+    to {
+      left: 0px;
+    }
+  }
 }/*# sourceMappingURL=style.css.map */
