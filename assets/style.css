@@ -1,0 +1,28 @@
+.bgcolor {
+  background-color: #202020;
+  padding: 15px;
+}
+.bgcolor .head .logo {
+  gap: 5rem;
+}
+.bgcolor .head .logo .order li {
+  list-style: none;
+}
+.bgcolor .head .logo .order li a {
+  text-decoration: none;
+  color: white;
+}
+.bgcolor .head .logo button {
+  padding: 7px 25px;
+  background: #ff3839;
+  border-radius: 9px;
+  color: #ffffff;
+  border: none;
+}
+
+section .backimage {
+  background-image: url("/img/graphic-designers-meeting.png");
+  height: 705px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}/*# sourceMappingURL=style.css.map */
