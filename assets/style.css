@@ -2,6 +2,11 @@
   background-color: #202020;
   padding: 15px;
 }
+@media only screen and (max-width: 575px) {
+  .bgcolor header .logo .images img {
+    width: 131px;
+  }
+}
 .bgcolor header .logo .order li {
   list-style: none;
 }
@@ -15,6 +20,25 @@
   border-radius: 9px;
   color: #ffffff;
   border: none;
+}
+@media only screen and (max-width: 768px) {
+  .bgcolor header .logo button {
+    margin-left: 25px;
+  }
+}
+.bgcolor header .icon i {
+  color: white;
+  font-size: 25px;
+}
+@media only screen and (min-width: 992px) {
+  .bgcolor header .icon i {
+    display: none;
+  }
+}
+@media only screen and (max-width: 942px) {
+  .bgcolor header h1 {
+    font-size: 50px;
+  }
 }
 
 section .backimage {
@@ -37,6 +61,16 @@ section .backimage .all_item .one_h1 h1 {
   margin-left: 30px;
   width: 66%;
 }
+@media only screen and (max-width: 942px) {
+  section .backimage .all_item .one_h1 h1 {
+    font-size: 50px;
+  }
+}
+@media only screen and (max-width: 942px) {
+  section .backimage .all_item .one_h1 h1 {
+    font-size: 40px;
+  }
+}
 section .backimage .all_item .allsolid {
   width: 80%;
   display: flex;
@@ -50,6 +84,16 @@ section .backimage .all_item .allsolid .solid {
 section .backimage .all_item .p2_page p {
   font-size: 19px;
   width: 51%;
+}
+@media only screen and (max-width: 942px) {
+  section .backimage .all_item .p2_page p {
+    font-size: 20px;
+  }
+}
+@media only screen and (max-width: 411px) {
+  section .backimage .all_item .p2_page p {
+    font-size: 15px;
+  }
 }
 section .backimage .all_item .all_button .button_right button {
   color: white;

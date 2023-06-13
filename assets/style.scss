@@ -3,7 +3,20 @@
   padding: 15px;
   header {
     .logo {
-        
+        .images{
+            img{
+
+
+            }
+          
+            @media only screen and (max-width: 575px){
+                &{
+                    img{
+                        width: 131px;
+                    }
+                }
+            }
+        }
       .order {
         li {
           list-style: none;
@@ -19,8 +32,33 @@
       border-radius: 9px;
       color: #ffffff;
       border: none;
+      @media only screen and (max-width: 768px){
+        &{                
+                margin-left: 25px;
+        }
       }
     }
+}
+    .icon{
+      i{
+          color: white;
+          font-size: 25px;
+          @media only screen and (min-width: 992px) {
+            display: none;
+          }
+          
+      }
+    }
+     @media only screen and (max-width: 942px)  {
+    
+                &{
+                    h1{
+                        font-size: 50px;
+        
+                    }
+                }
+            }
+    
   }
 }
 section{
@@ -48,6 +86,23 @@ section{
                 margin-left: 30px;
                 width: 66%;
             }
+            @media only screen and (max-width: 942px)  {
+    
+                &{
+                    h1{
+                        font-size: 50px;
+        
+                    }
+                }
+            }
+            @media only screen and (max-width: 942px){
+                &{
+                    h1{
+                        font-size: 40px;
+                    }
+                }
+            }
+        
         }
        .allsolid{
         width: 80%;
@@ -66,6 +121,22 @@ section{
             font-size: 19px;
             width: 51%;
                
+        }
+        @media only screen and (max-width: 942px)  {
+    
+            &{
+                p{
+                    font-size: 20px;
+    
+                }
+            }
+        }
+        @media only screen and (max-width: 411px){
+            &{
+                p{
+                    font-size: 15px;
+                }
+            }
         }
        }
        .all_button{
@@ -90,4 +161,6 @@ section{
     }
  }
 }
+
+
 
